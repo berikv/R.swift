@@ -52,7 +52,7 @@ struct Type: CustomStringConvertible, Equatable, Hashable {
   let optional: Bool
 
   var fullyQualifiedName: String {
-    let optionalString = optional ? "?" : ""
+    let optionalString = optional ? "!" : ""
 
     if let genericType = genericTypeBox.value {
       return "\(fullName)<\(genericType)>\(optionalString)"
@@ -75,7 +75,7 @@ struct Type: CustomStringConvertible, Equatable, Hashable {
   }
 
   var hashValue: Int {
-    let optionalString = optional ? "?" : ""
+    let optionalString = optional ? "!" : ""
     return "\(fullName)\(optionalString)".hashValue
   }
 
