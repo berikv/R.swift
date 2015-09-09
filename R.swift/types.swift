@@ -62,9 +62,10 @@ struct Type: CustomStringConvertible, Equatable, Hashable {
   }
 
   private var fullName: String {
-    if let module = module {
-      return "\(module).\((name))"
-    }
+    // This doesn't work with UI testing builds
+//    if let module = module {
+//      return "\(module).\((name))"
+//    }
 
     return name
   }
