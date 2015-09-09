@@ -259,6 +259,8 @@ let ElementNameToTypeMapping = [
   "navigationController": Type(name: "UINavigationController"),
   "avPlayerViewController": Type(name: "AVPlayerViewController"),
   "collectionViewController": Type(name: "UICollectionViewController"),
+  "collectionViewCell": Type(name: "UICollectionViewCell"),
+  "collectionReusableView": Type(name: "UICollectionReusableView")
 ]
 
 let SwiftKeywords = ["class", "deinit", "enum", "extension", "func", "import", "init", "internal", "let", "operator", "private", "protocol", "public", "static", "struct", "subscript", "typealias", "var", "break", "case", "continue", "default", "do", "else", "fallthrough", "for", "if", "in", "return", "switch", "where", "while", "as", "dynamicType", "false", "is", "nil", "self", "Self", "super", "true", "__COLUMN__", "__FILE__", "__FUNCTION__", "__LINE__"]
